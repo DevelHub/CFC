@@ -10,8 +10,7 @@ public class GeneralParser {
         Stack<String> mainStack = new Stack<>();
         Stack<String> operatorStack = new Stack<>();
 
-        for(int i = 0; i < input.length(); i++) {
-            char ch = input.charAt(i);
+        for(char ch: input.toCharArray()) {
             String str = String.valueOf(ch);
             if(Character.isDigit(ch)) {
                 mainStack.push(str);

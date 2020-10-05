@@ -12,8 +12,7 @@ public class GeneralUtility {
 
     public static boolean isStringDigit(String input) {
 //        might just need to check first character...below for now
-        for(int i = 0; i < input.length(); i++) {
-            char ch = input.charAt(i);
+        for(char ch: input.toCharArray()) {
             if(!Character.isDigit(ch))
                 return false;
         }
